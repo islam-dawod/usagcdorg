@@ -1,0 +1,39 @@
+/*
+Theme Name: WP Bootstrap 4
+
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+body {
+    direction: rtl;
+    unicode-bidi: embed;
+    text-align: right;
+}
+
+.navbar-nav .dropdown-menu a {
+    text-align: right;
+}
+
+blockquote {
+    border-left: 0;
+    border-right: 3px solid rgba(33, 37, 41, 0.25);
+}
+
+.sidebar-area .widget ul, .footer-widgets .widget ul {
+    padding-right: 20px;
+}
+
+.comments-area .logged-in-as {
+    padding-right: 15px;
+}
+
+.widget-area .star-rating:before {
+    margin-right: 30px;
+    float: right;
+    left: auto;
+    right: 0;
+}
